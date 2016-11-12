@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/demo.css"> <!-- Resource style -->
+
+	<!-- YOUR STYLES -->
+	<link rel="stylesheet" href="css/styles.css">	
+
+
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Course Catalog</title>
+</head>
+<body>
+	
+	<header class="cd-header">
+		<h1>Course Catalog</h1>
+	</header>
+
+	<main class="cd-main-content">
+		
+		
+<!--	Dots for filter, no dots for show/hide	-->
+		<!-- QUICK FILTERS (HORIZONTAL) Reset All Filters-->
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder"> 
+						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+					</li> 
+					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+					<li class="filter" data-filter=".req"><a href="#0" data-type="req">Required</a></li>
+					<li class="filter" data-filter=".elect"><a href="#0" data-type="elect">Electives</a></li>
+					
+					<!-- Grid/List Views -->
+					<li>---</li>
+					<li><a href="#" id="grid">&#8862; Grid</a></li>
+					<li><a href="#" id="list">&#9636; List</a></li>
+
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
+
+<!-- CONTENT TO SHOW/HIDE  -->
+		<section class="cd-gallery">
+			<ul>
+				<li class="mix req prereq">
+					<h1>DESN 100</h1>
+					<h3>Drawing for Communication</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</li>
+				<li class="mix elect prereq">
+					<h1>DESN 490</h1>
+					<h3>Professional Practice</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</li>
+				<li class="mix elect 200">
+					<h1>DESN 260</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</li>
+				<li class="mix req 100">
+					<h1>DESN 125</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</li>
+				
+
+				<!-- EMPTY ELEMENTS FOR LAYOUT -->
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+			<div class="cd-fail-message">No results found</div>
+		</section> <!-- cd-gallery -->
+
+
+<!--  SEARCH FILTERS -->
+		<div class="cd-filter">
+			<form>
+				<div class="cd-filter-block">
+					<h4>Search</h4>
+					
+					<div class="cd-filter-content">
+						<input type="search" placeholder="Pick Your Path">
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+				
+<!--		CHECK BOXES		-->
+					<h4>Check boxes</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".prereq" type="checkbox" id="checkbox1">
+			    			<label class="checkbox-label" for="checkbox1">Prerequisites</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".100" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="checkbox2">100 Level</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".200" type="checkbox" id="checkbox3">
+							<label class="checkbox-label" for="checkbox3">200 Level</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+		 
+
+				<div class="cd-filter-block">
+					<h4>Radio buttons</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+							<label class="radio-label" for="radio1">All</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+							<label class="radio-label" for="radio2">Choice 2</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+							<label class="radio-label" for="radio3">Choice 3</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+			</form>
+
+			<a href="#0" class="cd-close">Close</a>
+		</div> <!-- cd-filter -->
+
+		<a href="#0" class="cd-filter-trigger">Filters</a>
+	</main> <!-- cd-main-content -->
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/demo.js"></script> <!-- Resource jQuery -->
+
+<!-- YOUR SCRIPTS -->
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

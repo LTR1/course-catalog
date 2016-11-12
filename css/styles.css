@@ -1,0 +1,32 @@
+/* FONTS */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* YOUR STYLES */
+
+.cd-header {
+    background: #a10022;
+}
+
+/* CONTENT CONTAINERS */
+.cd-gallery li {
+    background: white;
+    padding: 1em;
+}
+
+/* Grid View */
+.grid li.mix {
+    
+}
+
+/* List View */
+.list li.mix {
+    width: 100%;
+}
+
+.list li.mix p {
+    display: none;
+}
