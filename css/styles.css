@@ -1,7 +1,7 @@
 /* FONTS */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -30,3 +30,31 @@ body {
 .list li.mix p {
     display: none;
 }
+
+.cd-filter .cd-close {
+     background: red;
+}
+
+.cd-filter:hover .cd-close:hover {
+     background: red;
+}
+
+.cd-filter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: yellow;
+    z-index: 2;
+}
+
+li .mix{background: red;
+}
+
+p {
+    
+    font-weight: 300;
+}
+/* Pre-reqs, Course Number, CRN, Description,
