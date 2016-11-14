@@ -50,7 +50,7 @@ body {
     left: 0;
     height: 50px;
     width: 100%;
-    background-color: yellow;
+    background-color: #000000;
     z-index: 2;
 }
 
@@ -93,6 +93,18 @@ p {
 
 .descriptionNoShow {
     display: none;
+}
+
+.mix:hover {
+    max-height: 15em;
+}
+
+.mix {
+    max-height: 4em;
+    overflow: hidden;
+    -webkit-transition: max-height 0.8s;
+    -moz-transition: max-height 0.8s;
+    transition: max-height 0.8s;
 }
 
 
