@@ -1,14 +1,7 @@
-/* FONTS */
+/* HTML Global CSS */
 
 body {
     font-family: 'Oswald', sans-serif;
-}
-
-
-/* YOUR STYLES */
-
-.cd-header {
-    background: #a10022;
 }
 
 
@@ -20,9 +13,22 @@ body {
 }
 
 
+/* Global Class CSS */
+
+.cd-header {
+    background: #a10022;
+}
+
+
 /* Grid View */
 
-.grid li.mix {}
+.grid li.mix p {
+    display: none;
+}
+
+.grid li.mix:hover p {
+    display: block;
+}
 
 
 /* List View */
@@ -34,6 +40,13 @@ body {
 .list li.mix p {
     display: none;
 }
+
+.list li.mix:hover p {
+    display: block;
+}
+
+
+/* Fliter */
 
 .cd-filter .cd-close {
     background: red;
@@ -60,39 +73,30 @@ li .mix {
 
 p {
     font-weight: 300;
+    font-family: sans-serif;
 }
-
-#curtain {}
 
 #course {
     display: inline-block;
 }
 
 .cd-gallery img {
-    position: static;
+    position: relative;
     width: 1.5em;
     height: 1.5em;
-    display: inline-block;
+    display: block;
     float: right;
-    opacity: 0;
+    opacity: 1;
     right: 0%;
-    bottom: 50%;
+    display: none;
 }
 
-#curtainUp {
-    opacity: 1;
-}
-
-#curtainDown {
-    opacity: 1;
-}
-
-.descriptionShow {
+.curtainUp img {
     display: block;
 }
 
-.descriptionNoShow {
-    display: none;
+.curtainDown img {
+    display: block;
 }
 
 .mix:hover {

@@ -15,11 +15,22 @@ $('#list').click(function () {
     $('.cd-gallery').addClass('list');
     console.log('FOR NOONE');
 });
-$('#curtainUp').click(function () {
-    $('p').removeClass();
-    $('p').addClass('descriptionShow');
-})
-$('#curtainDown').click(function () {
-    $('p').removeClass();
-    $('p').addClass('descriptionNoShow');
-})
+$('a').click(function () {
+    // Remove ONLY 'list' class
+    $(this).removeClass("curtainUp");
+    //Add ONLY 'grid' class
+    $(this).addClass('curtainDown');
+    console.log('GO VOTE');
+});
+// List View
+$('a').click(function () {
+    // Remove ONLY 'curtainDown' class
+    $(this).removeClass('curtainDown');
+    //Add ONLY 'curtainUp' class
+    $(this).addClass('curtainUp');
+    console.log('FOR NOONE');
+});
+
+function pageLoad() {
+    $('.cd-gallery').attr('id', "grid");
+}
