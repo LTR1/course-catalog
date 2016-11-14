@@ -11,18 +11,22 @@ body {
     background: #a10022;
 }
 
+
 /* CONTENT CONTAINERS */
+
 .cd-gallery li {
     background: white;
     padding: 1em;
 }
 
+
 /* Grid View */
-.grid li.mix {
-    
-}
+
+.grid li.mix {}
+
 
 /* List View */
+
 .list li.mix {
     width: 100%;
 }
@@ -32,11 +36,11 @@ body {
 }
 
 .cd-filter .cd-close {
-     background: red;
+    background: red;
 }
 
 .cd-filter:hover .cd-close:hover {
-     background: red;
+    background: red;
 }
 
 .cd-filter::before {
@@ -50,11 +54,46 @@ body {
     z-index: 2;
 }
 
-li .mix{background: red;
+li .mix {
+    background: red;
 }
 
 p {
-    
     font-weight: 300;
 }
+
+#curtain {}
+
+#course {
+    display: inline-block;
+}
+
+.cd-gallery img {
+    position: static;
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    float: right;
+    opacity: 0;
+    right: 0%;
+    bottom: 50%;
+}
+
+#curtainUp {
+    opacity: 1;
+}
+
+#curtainDown {
+    opacity: 1;
+}
+
+.descriptionShow {
+    display: block;
+}
+
+.descriptionNoShow {
+    display: none;
+}
+
+
 /* Pre-reqs, Course Number, CRN, Description,
